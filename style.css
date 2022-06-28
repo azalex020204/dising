@@ -32,8 +32,7 @@ li {
   top: 0;
   left: 0;
   width: calc(90px + (326 - 90) * ((100vw - 320px) / (1440 - 320)));
-  /* padding-right:calc(10px + (68 - 10) * ((100vw + 320px) / (1440 - 320))) ;
-  padding-left: calc(10px + (68 - 10) * ((100vw + 320px) / (1440 - 320))); */
+  z-index: 100;
 }
 
 .logo img {
@@ -54,6 +53,7 @@ li {
   display: flex;
   justify-content: space-between;
   width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
+  z-index: 10;
 }
 
 .header__worlds {
@@ -70,6 +70,7 @@ li {
 @media(max-width:1200px) {
   .header {
     width: 100%;
+    z-index: 10;
   }
 
   .header__worlds {
@@ -83,7 +84,6 @@ li {
     font-family: 'Open Sans';
     font-weight: 200;
     font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1200 - 320)));
-    ;
     line-height: 25px;
     margin: 1px;
   }
@@ -199,10 +199,40 @@ li {
 }
 /* --------------------main------------------------------------------------- */
 .main{
-  position: relative;
-  background-color: #fff;
+  position: absolute;
+  background-color: #141414;
   height: calc(9px + (660 - 9) * ((100vw - 320px) / (1440 - 320)));
-  z-index: -1;
+  background-color: #141414;
+  z-index: 1;
+  width: 100%;
+}
+.main__img img{
+  margin-top: calc(50px + (68 - 50) * ((100vw - 320px) / (1440 - 320)));
+  position: absolute;
+  z-index: 2;
+  width: calc(50px + (978 - 50) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(50px + (591 - 50) * ((100vw - 320px) / (1440 - 320)));
+}
+.soc{
+  margin-top: 100px;
+}
+.soc ul{
+  display: flex;
+}
+@media(max-width:1200px) {
+  .main__img{
+    margin-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+  }
+}
+@media(max-width:820px) {
+  .main__img{
+    margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (820 - 320)));
+    width: 100%;
+  }
+  .main__img img{
+    width: 100%;  
+    height: calc(150px + (591 - 150) * ((100vw - 320px) / (820 - 320)));
+  }
 }
 
 
