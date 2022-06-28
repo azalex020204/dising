@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  background: #fff;
+  margin: 0 auto;
+  width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
+  position: relative;
+}
+/* ----------------Header---------------------------------------------- */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background: #99823D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(90px + (326 - 90) * ((100vw - 320px) / (1440 - 320)));
+  /* padding-right:calc(10px + (68 - 10) * ((100vw + 320px) / (1440 - 320))) ;
+  padding-left: calc(10px + (68 - 10) * ((100vw + 320px) / (1440 - 320))); */
+}
+
+.logo img {
+  padding-top: calc(10px + (35 - 10) * ((100vw - 320px) / (1440 - 320)));
+  padding-bottom: calc(10px + (35 - 10) * ((100vw - 320px) / (1440 - 320)));
+  /* width: calc(90px + (190 - 90) * ((100vw - 320px) / (1440 - 320))); */
+  width: 80%;
+}
+
+.header {
+  position: relative;
+  width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
+  
+}
+
+.header__absolute {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.header__worlds {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
+  justify-content: space-between;
+  padding-left: calc(100px + (350 - 100) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(30px + (70 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+
+/* ------------Адаптив шапки сайту для планшетів-------------------- */
+@media(max-width:1200px) {
+  .header {
+    width: 100%;
+  }
+
+  .header__worlds {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .headerNav .navItem a {
+    font-family: 'Open Sans';
+    font-weight: 200;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1200 - 320)));
+    ;
+    line-height: 25px;
+    margin: 1px;
+  }
+}
+
+.headerInfo ul {
+  display: flex;
+  gap: calc(10px + (36 - 10) * ((100vw - 320px) / (1440 - 320)));
+  align-items: center;
+
+}
+
+.headerInfo {
+  display: flex;
+  margin-right: calc(10px + (36 - 10) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.headerInfo__item {
+  height: calc(10px + (14 - 10) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+}
+
+.navItem a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.Architecture a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  /* calc(10px + (14 - 10) * ((100vw - 320px) / (1440 - 320))); */
+  font-size: calc(9px + (12 - 9) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(9px + (15 - 9) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.Made a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(9px + (12 - 9) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(9px + (15 - 9) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerNav {}
+
+.headerNav nav ul {
+  display: flex;
+  gap: calc(10px + (36 - 10) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.navItem a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(9px + (11 - 9) * ((100vw - 320px) / (1440 - 320)));
+  ;
+  line-height: 34px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* ----------------Адаптив шапки сайту для всіх телефонів ---------------------- */
+@media(max-width:820px) {
+  .wrapper {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 20%;
+  }
+
+  .header {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .headerInfo {
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__worlds {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 12% auto 0 auto;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .header nav ul {
+    gap: calc(6px + (14 - 6) * ((100vw - 320px) / (820 - 320)));
+  }
+
+  .headerNav .navItem a {
+    line-height: 14px;
+    font-size: calc(8px + (15 - 8) * ((100vw - 320px) / (820 - 320)));
+  }
+}
+/* --------------------main------------------------------------------------- */
+.main{
+  position: relative;
+  background-color: #fff;
+  height: calc(9px + (660 - 9) * ((100vw - 320px) / (1440 - 320)));
+  z-index: -1;
+}
+
+
+
