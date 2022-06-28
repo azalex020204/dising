@@ -22,6 +22,7 @@ li {
   width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
   position: relative;
 }
+
 /* ----------------Header---------------------------------------------- */
 
 .logo {
@@ -45,7 +46,7 @@ li {
 .header {
   position: relative;
   width: calc(320px + (1300 - 320) * ((100vw - 320px) / (1440 - 320)));
-  
+
 }
 
 .header__absolute {
@@ -197,8 +198,9 @@ li {
     font-size: calc(8px + (15 - 8) * ((100vw - 320px) / (820 - 320)));
   }
 }
+
 /* --------------------main------------------------------------------------- */
-.main{
+.main {
   position: absolute;
   background-color: #141414;
   height: calc(9px + (660 - 9) * ((100vw - 320px) / (1440 - 320)));
@@ -206,34 +208,164 @@ li {
   z-index: 1;
   width: 100%;
 }
-.main__img img{
+
+.main__img img {
   margin-top: calc(50px + (68 - 50) * ((100vw - 320px) / (1440 - 320)));
   position: absolute;
   z-index: 2;
   width: calc(50px + (978 - 50) * ((100vw - 320px) / (1440 - 320)));
   height: calc(50px + (591 - 50) * ((100vw - 320px) / (1440 - 320)));
 }
-.soc{
-  margin-top: 100px;
+
+.soc {
+  margin-top: calc(85px + (659 - 85) * ((100vw - 320px) / (1440 - 320)));
+  background: #EBEBEB;
+  width: calc(50px + (978 - 50) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(50px + (93 - 50) * ((100vw - 320px) / (1440 - 320)));
 }
-.soc ul{
+
+.soc ul {
   display: flex;
+  gap: calc(10px + (37 - 10) * ((100vw - 320px) / (1440 - 320)));
+  align-items: center;
+  height: calc(50px + (93 - 50) * ((100vw - 320px) / (1440 - 320)));
 }
+
+.soc__item a {
+  margin-left: 5px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 68px;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* ------------Адаптив шапки сайту для планшетів-------------------- */
 @media(max-width:1200px) {
-  .main__img{
+  .main__img {
     margin-top: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
   }
+
+  .soc {
+    margin-top: calc(115px + (589 - 115) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  .soc ul {
+    justify-content: space-evenly;
+  }
+
+  .soc__item a {
+    font-size: calc(3px + (18 - 3) * ((100vw - 320px) / (1200 - 320)));
+  }
+
 }
+
+/* ----------------Адаптив шапки сайту для всіх телефонів ---------------------- */
 @media(max-width:820px) {
-  .main__img{
+  .main__img {
     margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (820 - 320)));
     width: 100%;
   }
-  .main__img img{
-    width: 100%;  
+
+  .main__img img {
+    width: 100%;
     height: calc(150px + (591 - 150) * ((100vw - 320px) / (820 - 320)));
+  }
+
+  .soc {
+    margin-top: calc(230px + (749 - 230) * ((100vw - 320px) / (820 - 320)));
+    width: 100%;
+  }
+
+  .soc ul {
+    justify-content: space-evenly;
+  }
+
+  .soc__item a {
+    font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (820 - 320)));
   }
 }
 
+.ventage {
+  position: absolute;
+  z-index: 2;
+  top: calc(8px + (136 - 8) * ((100vw - 320px) / (1440 - 320)));
+  left: calc(8px + (700 - 8) * ((100vw - 320px) / (1440 - 320)));
+  background: #fff;
+  width: calc(8px + (584 - 8) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(8px + (455 - 8) * ((100vw - 320px) / (1440 - 320)));
+  padding: 68px;
+}
 
+.ventage__subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
 
+  color: #99823D;
+}
+
+.ventage__title {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 67px;
+  line-height: 67px;
+  text-transform: capitalize;
+  color: #141414;
+}
+
+.ventage__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #141414;
+}
+.ventage__buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.ventage__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(8px + (68 - 8) * ((100vw - 320px) / (1440 - 320)));
+}
+.ventage__button2{
+
+}
+.button1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #99823D;
+}
+
+.button2 {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #141414;
+}
