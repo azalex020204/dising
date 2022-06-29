@@ -595,7 +595,7 @@ color: #141414;
 
   .ItsOur__absolute__allWidth{
     width: calc(320px + (820 - 320) * ((100vw - 320px) / (820 - 320)));
-    height: calc(750px + (1000 - 750) * ((100vw - 320px) / (820 - 320)));
+    height: auto;
     left: 0px;
     padding-bottom: calc(8px + (10 - 8) * ((100vw - 320px) / (820 - 320)));;
   }
