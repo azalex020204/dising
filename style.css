@@ -437,9 +437,9 @@ li {
     width: 0;
   }
   .ventage__button {
-    height: calc(8px + (68 - 8) * ((100vw - 320px) / (820 - 320)));
-    width: calc(8px + (216 - 8) * ((100vw - 320px) / (820 - 320)));
-  
+    padding: 30;
+    height: calc(30px + (68 - 30) * ((100vw - 320px) / (820 - 320)));
+    width: calc(100px + (216 - 100) * ((100vw - 320px) / (820 - 320)));
   }
   
   .ventage__button2 {
@@ -447,17 +447,8 @@ li {
   }
   
   .button1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (820 - 320)));
     line-height: calc(8px + (18 - 8) * ((100vw - 320px) / (820 - 320)));
-    text-align: center;
-    letter-spacing: 2.975px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #99823D;
-  
   }
   
   .button2 {
@@ -477,7 +468,135 @@ li {
 /* ///////////////////////////////////////////////////////////////////////////////// */
 .ItsOur{
   background-color: #EBEBEB;
-  height: calc(8px + (872 - 8) * ((100vw - 320px) / (820 - 320)));;
+  height: calc(8px + (872 - 8) * ((100vw - 320px) / (1440 - 320)));;
+}
+.ItsOur__absolute__allWidth{
+  width: calc(390px + (1440 - 390) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(8px + (872 - 8) * ((100vw - 320px) / (1440 - 320)));;
+  position: absolute;
+  z-index: 2;
+  left: -70px;
+  background-color: #ffffff;
+  padding: calc(8px + (130 - 8) * ((100vw - 320px) / (1440 - 320)));;
+}
+.ItsOur__info {
+  display: flex;
+  gap: 100px;
+}
+.left__text {
+  width: calc(170px + (683 - 170) * ((100vw - 320px) / (1440 - 320)));
+}
+.left__text__subtitle {
+}
+.subtitle__our {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 17px;
+/* identical to box height, or 151% */
+
+letter-spacing: 2.7625px;
+text-transform: uppercase;
+
+color: #99823D;
+}
+.left__text__title {
+  font-family: 'Teko';
+font-style: normal;
+font-weight: 400;
+font-size: 53px;
+line-height: 53px;
+/* or 100% */
+
+text-transform: capitalize;
+padding-bottom: calc(8px + (28 - 8) * ((100vw - 320px) / (1440 - 320)));
+color: #141414;
+
+}
+.left__text__text {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 26px;
+color: #141414;
+padding-bottom: calc(8px + (58 - 8) * ((100vw - 320px) / (1440 - 320)));;
+}
+.left__text__text p {
+  margin-bottom: 16px;
+}
+.right__text {
+  width: calc(100px + (323 - 100) * ((100vw - 320px) / (1440 - 320)));;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right__text__subtitle {
+}
+.right__text__title {
+  font-family: 'Teko';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 26px;
+/* or 100% */
+
+text-transform: capitalize;
+
+color: #141414;
+}
+.k {
+}
+.k ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.point{
+  width: 9px;
+  height: 9px;
+}
+.bolt__text {
+  font-family: 'Teko';
+font-style: normal;
+font-weight: 700;
+font-size: calc(8px + (59 - 8) * ((100vw - 320px) / (1440 - 320)));
+line-height: 59px;
+/* identical to box height, or 99% */
+text-align: center;
+
+color: #141414;
+}
+.k ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media(max-width:1200px){
+  .ItsOur__absolute__allWidth{
+    height: calc(500px + (872 - 500) * ((100vw - 320px) / (1200 - 320)));;
+  
+}
+@media(max-width:820px) {
+  .ItsOur__info {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .ItsOur__absolute__allWidth{
+    width: calc(320px + (820 - 320) * ((100vw - 320px) / (820 - 320)));
+    height: 1000px;
+    left: 0px;
+    padding: calc(8px + (130 - 8) * ((100vw - 320px) / (1440 - 320)));;
+  }
+  .point{
+    width: 5px;
+    height: 5px;
+  }
 }
 
 
