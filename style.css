@@ -243,6 +243,106 @@ li {
   color: #000000;
 }
 
+.ventage {
+  position: absolute;
+  z-index: 3;
+  top: calc(8px + (136 - 8) * ((100vw - 320px) / (1440 - 320)));
+  left: calc(8px + (700 - 8) * ((100vw - 320px) / (1440 - 320)));
+  background: #fff;
+  width: calc(8px + (584 - 8) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(250px + (455 - 250) * ((100vw - 320px) / (1440 - 320)));
+  padding: calc(30px + (68 - 30) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.ventage__subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: 2.7625px;
+  text-transform: uppercase;
+  color: #99823D;
+}
+
+.ventage__title {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(8px + (67 - 8) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(1px + (67 - 1) * ((100vw - 320px) / (1440 - 320)));
+  text-transform: capitalize;
+  color: #141414;
+  margin-bottom: calc(1px + (32 - 1) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.ventage__text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(8px + (17 - 8) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 26px;
+  color: #141414;
+  margin-bottom: 15px;
+}
+
+.ventage__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ventage__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(8px + (68 - 8) * ((100vw - 320px) / (1440 - 320)));
+  width: calc(8px + (216 - 8) * ((100vw - 320px) / (1440 - 320)));
+  background: #99823D;
+
+}
+
+.ventage__button2 {
+  background: #141414;
+}
+
+.button1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(8px + (18 - 8) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #99823D;
+
+}
+
+.button2 {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1440 - 320)));
+  line-height: calc(8px + (18 - 8) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  letter-spacing: 2.975px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #141414;
+}
+
+.braunQatro {
+  position: absolute;
+  width: calc(220px + (489 - 250) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(8px + (329 - 8) * ((100vw - 320px) / (1440 - 320)));
+  left: calc(200px + (860 - 200) * ((100vw - 320px) / (1440 - 320)));
+  top: calc(126px + (423 - 125) * ((100vw - 320px) / (1440 - 320)));
+  background: #99823D;
+  z-index: 2;
+}
+
 /* ------------Адаптив шапки сайту для планшетів-------------------- */
 @media(max-width:1200px) {
   .main__img {
@@ -261,6 +361,27 @@ li {
     font-size: calc(3px + (18 - 3) * ((100vw - 320px) / (1200 - 320)));
   }
 
+  /* ------------------------------------------------------------------------------- */
+  .ventage {
+    top: calc(59px + (125 - 50) * ((100vw - 320px) / (1200 - 320)));
+    left: calc(8px + (600 - 8) * ((100vw - 320px) / (1200 - 320)));
+    background: #fff;
+    width: calc(100px + (400 - 50) * ((100vw - 320px) / (1200 - 320)));
+    height: calc(50px + (490 - 90) * ((100vw - 320px) / (1200 - 320)));
+    padding: calc(25px + (38 - 30) * ((100vw - 320px) / (1200 - 320)));
+  }
+  .ventage__title {
+    font-size: calc(8px + (67 - 8) * ((100vw - 320px) / (1200 - 320)));
+    margin-bottom: calc(1px + (42 - 10) * ((100vw - 320px) / (1200 - 320)));
+  }
+  .braunQatro{
+    width: calc(220px + (489  - 390) * ((100vw - 320px) / (1200 - 320)));
+    height: calc(8px + (300  - 33) * ((100vw - 320px) / (1200 - 320)));
+    left:  calc(50px + (760  - 280) * ((100vw - 320px) / (1200 - 320)));
+    top: calc(112px + (314  - 112) * ((100vw - 320px) / (1200 - 320)));
+    background: #99823D;
+    z-index: 2;
+  }
 }
 
 /* ----------------Адаптив шапки сайту для всіх телефонів ---------------------- */
@@ -287,84 +408,18 @@ li {
   .soc__item a {
     font-size: calc(8px + (18 - 8) * ((100vw - 320px) / (820 - 320)));
   }
-}
-
-.ventage {
-  position: absolute;
-  z-index: 2;
-  top: calc(8px + (136 - 8) * ((100vw - 320px) / (1440 - 320)));
-  left: calc(8px + (700 - 8) * ((100vw - 320px) / (1440 - 320)));
-  background: #fff;
-  width: calc(8px + (584 - 8) * ((100vw - 320px) / (1440 - 320)));
-  height: calc(8px + (455 - 8) * ((100vw - 320px) / (1440 - 320)));
-  padding: 68px;
-}
-
-.ventage__subtitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 17px;
-  letter-spacing: 2.7625px;
-  text-transform: uppercase;
-  color: #99823D;
-}
-
-.ventage__title {
-  font-family: 'Teko';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 67px;
-  line-height: 67px;
-  text-transform: capitalize;
-  color: #141414;
-}
-
-.ventage__text {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 26px;
-  color: #141414;
-}
-.ventage__buttons{
-  display: flex;
-  justify-content: space-between;
-}
-.ventage__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(8px + (68 - 8) * ((100vw - 320px) / (1440 - 320)));
-}
-.ventage__button2{
-
-}
-.button1 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 2.975px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #99823D;
-}
-
-.button2 {
-  display: inline-block;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  letter-spacing: 2.975px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #141414;
+  /* ---------------------- */
+  .ventage {
+    position: relative;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: calc(50px + (490 - 90) * ((100vw - 320px) / (820 - 320)));
+    padding: calc(25px + (38 - 30) * ((100vw - 320px) / (820 - 320)));
+  }
+  .braunQatro{
+    width: 0;
+  }
 }
