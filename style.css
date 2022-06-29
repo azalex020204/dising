@@ -673,15 +673,12 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: calc(8px + (15 - 8) * ((100vw - 320px) / (1440 - 320))); */
   font-family: 'Teko';
   z-index: 6;
 font-style: normal;
 font-weight: 400;
 font-size: calc(10px + (26 - 10) * ((100vw - 320px) / (1440 - 320)));
 line-height: calc(3px + (26 - 3) * ((100vw - 320px) / (1440 - 320)));
-/* identical to box height, or 100% */
-
 text-align: center;
 text-transform: capitalize;
 color: #FFFFFF;
