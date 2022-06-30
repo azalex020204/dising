@@ -625,13 +625,14 @@ color: #141414;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: calc(30px + (1000 - 30) * ((100vw - 320px) / (1440 - 320)));;
-  gap: calc(10px + (34 - 10) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(30px + (400 - 30) * ((100vw - 320px) / (1440 - 320)));;
+  gap: calc(15px + (34 - 15) * ((100vw - 320px) / (1440 - 320)));
 }
 .card{
   width: 100%;
   height: calc(30px + (343 - 30) * ((100vw - 320px) / (1440 - 320)));;;
   position: relative;
+  margin-top: 10px;
 }
 .img__card{
   position: absolute;
@@ -739,6 +740,88 @@ color: #FFFFFF;
   }
 }
 
+/* ////////////////////////////////////////////////////////// */
+.architecture{
+  margin-top: 30px;
+  width: calc(375px + (1180 - 375) * ((100vw - 320px) / (1440 - 320)));;
+  background: rgb(237, 0, 0);
+}
+.architecture__bg__absolute{
+  position: absolute;
+  top: -30;
+  left: 0;
+  width: calc(390px + (1440 - 390) * ((100vw - 320px) / (1440 - 320)));;
+  height: 600px;
+  z-index: -1;
+  background-color: #fff;
+}
+.architecture__subt {
+text-align: center;
+
+}
+.architecture__title {
+  font-family: 'Teko';
+font-style: normal;
+font-weight: 700;
+font-size: 53px;
+line-height: 53px;
+/* or 100% */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #141414;
+
+}
+.architecture__cards {
+  width: calc(300px + (1180 - 300) * ((100vw - 320px) / (1440 - 320)));
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.architecture__card {
+  width: calc(10px + (300 - 10) * ((100vw - 320px) / (1440 - 320)));
+}
+.imgCardAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.imgForCard {
+  width: calc(10px + (68 - 10) * ((100vw - 320px) / (1440 - 320)));
+  height: calc(10px + (68 - 10) * ((100vw - 320px) / (1440 - 320)));
+}
+.architecture__card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.title__card__arch {
+  font-family: 'Teko';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + (26 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 26px;
+  /* identical to box height, or 100% */
+  
+  text-transform: capitalize;
+  
+  color: #141414;
+  
+}
+.architecture__text {font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + (17 - 10) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 26px;
+  /* or 150% */
+  
+  
+  color: #141414;
+}
 
 
 
